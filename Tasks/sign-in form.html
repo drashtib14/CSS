@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: linear-gradient(#000,darkblue);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100vh;
+        }
+
+        .c1
+        {
+            height: 220px;
+            width: 220px;
+            background: linear-gradient(green,rgb(3, 212, 3),cyan 75%);
+            border-radius: 50%;
+            position: absolute;
+            top: 120px;
+            left: 380px;
+        }
+
+        .c2
+        {
+            height: 220px;
+            width: 220px;
+            background: linear-gradient(rgb(254, 120, 143),pink,orange);
+            border-radius: 50%;
+            position: absolute;
+            top: 400px;
+            left: 650px;
+        }
+
+        .main
+        {
+            width: 250px;
+            height: 30vh;
+            background: rgba(134, 133, 133, 0.4);
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 500px;
+            padding: 5px;
+            position: relative;
+            top: 250px;
+            backdrop-filter: blur(6px);
+        }
+
+        .header
+        {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+
+        input
+        {
+            background: rgba(45, 21, 21, 0.3);
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input:hover
+        {
+            color: #000;
+        }
+
+        input:focus
+        {
+            background: linear-gradient(to right,rgb(157, 193, 203),rgb(155, 250, 250));
+        }
+
+        .sign-in
+        {
+            background: linear-gradient(to right,green,rgb(42, 252, 42),aqua,lightblue,blue,purple,rgb(255, 128, 149),red,orange);
+            padding: 7px 35px;
+            border-radius: 7px;
+            border: none;
+            margin-bottom: 10px;
+            transition: .30s;
+        }
+
+        .sign-in:hover
+        {
+            transform: scale(0.9);
+            color: #000;
+        }        
+    </style>
+</head>
+<body>
+
+    <div class="c1"></div>
+    <div class="c2"></div>
+
+    <!-- <div class="container"> -->
+        <div class="main">
+        <form>
+            <h2 class="header">Sign In</h2>
+            <input type="text" placeholder="Username" required pattern="[a-zA-Z]+" title="Enter Your Username"><br><br>
+            <input type="password" required minlength="4" maxlength="8" title="Enter Your Password" placeholder="Password"> <br><br>
+            <button class="sign-in">Sign In</button>
+        </form>
+        <!-- </div> -->
+    </div>
+    
+</body>
+</html>

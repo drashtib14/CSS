@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body
+        {
+            background: #000;
+        }
+        .container
+        {
+            background: rgba(100,100,100,.2);
+            width: 16%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 140px auto;
+            padding: 60px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        span
+        {
+            color: #fff;
+        }
+
+        h3
+        {
+            color: #fff;
+            font-weight: bolder;
+            font-size: 27px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        input
+        {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .hvr
+        {
+            width: 165px;
+            color: #000;
+            background: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 5px;
+            transition: .40s;
+        }
+
+        .hvr:hover
+        {
+            transform: scale(0.9);
+            background: #000;
+            color: #fff;
+        }
+
+        .gle, .fb
+        {
+            padding: 10px;
+            margin-right: 9px;
+            border: none;
+            color: #fff;
+            font-weight: bolder;
+            background: rgba(100, 100, 100, .4);
+            transition: .20s;
+            display: inline-block;
+        }
+
+        .gle:hover, .fb:hover
+        {
+            transform: scale(0.9);
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .x
+        {
+            height: 130px;
+            width: 130px;
+           background: linear-gradient(blue,lightblue);
+           border-radius: 50%;
+           transform: translate(440px,-55px);
+           position: absolute;
+           /* top: 100px;
+           left: 37%; */
+        }
+
+        .y
+        {
+            height: 130px;
+            width: 130px;
+            background: linear-gradient(red,orange);
+            border-radius: 50%;
+            transform: translate(760px,330px);
+            position: absolute;
+            /* left: 60%;
+            top: 500px; */
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="x"></div>
+    <div class="y"></div>
+
+    <div class="container">
+        <form action="blur-task.htm">
+
+            <h3>Login Here</h3>
+            <span>Username </span><br>
+            <input type="text" required placeholder="Email Or Phone" title="Please Enter Only Email or Phone Number"><br>
+            <span>Password </span><br>
+            <input type="password" required title="Please Enter Your Password" minlength="4" maxlength="8"><br>
+            <button class="hvr">Log In</button><br>
+
+            <div class="gle">
+            <i class="fa fa-google" aria-hidden="true"></i>
+            <a href="">Google</a>
+        </div>
+        <div class="fb">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a href="">Facebook</a>
+        </div>
+        </form>
+    </div>
+
+</body>
+</html>

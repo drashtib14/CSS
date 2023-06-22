@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+ .container
+    {
+        height: 100vh;
+        background-size: 100% 100%;
+        background: linear-gradient(45deg,rgba(200, 32, 99, 0.8),rgba(255, 166, 0, 0.728)),url(Images/IceMountain.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+form
+{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 50%;
+    border-radius: 10px;
+    padding: 70px 70px;
+}
+
+h3
+{
+    font-size: 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #2f2b2b;
+    font-weight: bolder;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    padding-bottom: 70px;
+}
+
+input
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.x
+{
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right,rgb(244, 143, 160),rgb(244, 71, 100));
+    border-image-slice: 1;
+}
+
+textarea
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 5px;
+}
+
+span
+{
+    color: rgb(83, 80, 80);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-transform: uppercase;
+}
+    
+button
+{
+    background: linear-gradient(to right,rgba(200, 32, 99, 0.8),rgba(255, 166, 0, 0.728));
+    padding: 15px 20px;
+    width: 200px;
+    /* text-align: center; */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+button:hover
+{
+    transform: scale(0.9);
+}
+
+input:focus
+{
+    outline: none;
+}
+
+textarea:focus
+{
+    outline: none;
+}
+
+::selection
+{
+    color: orange;
+    background: rgb(251, 220, 162);
+}

@@ -1,0 +1,379 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    background: linear-gradient(to right,violet,rgb(81, 81, 207));
+}
+.container
+{
+    background: linear-gradient(to left,violet,rgb(81, 81, 207));
+    height: 680px;
+    width: 1210px;
+    border-radius: 17px;
+    border: 1px solid #d4d4d4;
+    margin: 40px auto;
+    /* background-attachment: fixed; */
+    position: relative;
+    overflow: hidden;
+}
+
+.circle
+{
+    height: 600px;
+    width: 600px;
+    background: linear-gradient(to right,violet,rgb(81, 81, 207));
+    border-radius: 50%;
+    position: absolute;
+    left: 750px;
+    top: 200px;
+    box-shadow: 10px 10px 3px,0px 0px 30px #dfdfdf inset;
+}
+
+/* Header starts */
+
+.header
+{
+    display: flex;
+    color: #fff;
+    line-height: 40px;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.logo
+{
+    display: flex;
+}
+
+.logo img
+{
+    padding-right: 6px;
+    height: 20px;
+    transform: rotate(-79deg);
+}
+
+.navbar
+{
+    display: flex;
+    /* font-size: 15px; */
+    margin: 0px 0px 0px 510px;
+}
+
+.header ul li
+{
+    display: inline-block;
+}
+
+.header ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 20px;
+}
+
+.navbar ul li a:hover
+{
+    color: #000;
+}
+
+.navbar button
+{
+    padding: 10px 25px;
+    color: #fff;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    transition: 0.2s;
+}
+
+.navbar button:hover
+{
+    color: #000;
+    background: #fff;
+}
+
+/* Header ends */
+
+.section1
+{
+    display: flex;
+}
+
+.txt
+{
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.txt span
+{
+    color: rgb(41, 207, 41);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.txt h1
+{
+    font-size: 40px;
+    color: #fff;
+    padding-top: 7px;
+    padding-bottom: 22px;
+}
+
+.txt p
+{
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+
+.txt .btn
+{
+    padding-bottom: 100px;
+}
+
+.btn .btn1
+{
+    padding: 10px 20px;
+    background: rgb(81, 81, 207);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    /* transition: 0.2s; */
+}
+
+.txt .btn1:hover
+{
+    background: #000;
+    color: #fff;
+}
+
+.txt .btn1 a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn2 a{
+    color: #fff;
+    text-decoration: none;
+}
+.txt .btn2{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.txt .footer{
+    font-size: 12px;
+}
+
+.txt .footer a{
+    color: rgb(255, 180, 255);
+}
+
+.c1{
+    height: 16px;
+    width: 16px;
+    background: linear-gradient(to left,violet,rgb(81, 81, 207));
+    border-radius: 50%;
+    border: 0px solid #d4d4d4;
+    position: absolute;
+    top: 100px;
+    left: 900px;
+}
+
+.c2{
+    height: 18px;
+    width: 18px;
+    background: linear-gradient(to right,violet,rgb(81, 81, 207));
+    border-radius: 50%;
+    border: 0px solid #d4d4d4;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+}
+
+.c3{
+    height: 23px;
+    width: 23px;
+    background: linear-gradient(to top,violet,rgb(81, 81, 207));
+    border-radius: 50%;
+    border: 0px solid #d4d4d4;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+
+.c4{
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(to left,violet,rgb(81, 81, 207));
+    border-radius: 50%;
+    border: 0px solid #d4d4d4;
+    position: absolute;
+    top: 560px;
+    left: 340px;
+}
+
+.c5{
+    height: 160px;
+    width: 160px;
+    background: linear-gradient(to right,violet,rgb(81, 81, 207));
+    border: 20px solid violet;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: -110px;
+    /* box-shadow: 0px 0px 0px,20px 20px 50px #dfdfdf inset; */
+
+}
+
+.c6{
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(to right,rgb(228, 85, 228),rgb(81, 81, 207));
+    border: 14px solid rgb(225, 126, 225);
+    border-radius: 50%;
+    position: absolute;
+    top: 470px;
+    left: 1000px;
+}
+
+/* Card1 starts */
+.card1{
+    background: rgba(255, 255, 255, 0.23);
+    height: 232px;
+    width: 367px;
+    position: relative;
+    border: 1px solid lightpink;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transform: rotate(18deg);
+    margin-left: 620px;
+    margin-top: -390px;
+    z-index: 1;
+}
+
+.card1 h2{
+    font-size: 32px;
+    color: #fff;
+    font-family: sans-serif ;
+    text-transform: uppercase;
+    padding-left: 230px;
+    position: absolute;
+}
+
+.card1 .num{
+    padding: 50px 0px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .bottom{
+    display: flex;
+    color: #fff;
+}
+
+.bottom .left span{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 10px;
+    color: #fff;
+}
+
+.bottom .left p{
+    padding-top: 5px;
+}
+
+.bottom .right{
+    padding-left: 170px;
+}
+
+.bottom .right span{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 10px;
+    color: #fff;
+}
+
+.bottom .right p{
+    padding-top: 5px;
+}
+/* Card1 ends */
+
+/* Card2 starts */
+.card2{
+    background: rgba(255, 255, 255, 0.23);
+    height: 173px;
+    width: 280px;
+    border: 1px solid rgba(148, 116, 212, 0.798);
+    border-radius: 10px;
+    margin-left: 590px;
+    margin-top: -50px; 
+    position: relative;
+    transform: rotate(-18deg);
+    padding: 10px 14px;
+    z-index: 0;
+}
+
+.card2 h2{
+    font-size: 22px;
+    color: #fff;
+    font-family: 'New Tegomin', serif;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-left: 200px;
+    filter: blur(3px);
+    position: absolute;
+}
+
+.card2 .num{
+    padding: 30px 0px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .card2 .bottom{
+      display: flex;
+      color: #fff;
+  }
+  
+  .card2 .bottom .left span{
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 7px;
+  }
+  
+  .card2 .bottom .left p{
+      padding-top: 3px;
+      font-size: 13px;
+  }
+  
+  .card2  .bottom .right{
+      padding-left: 140px;
+  }
+  
+  .card2  .bottom .right span{
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 7px;
+  }
+  
+  .card2 .bottom .right p{
+      padding-top: 5px;
+      font-size: 13px;
+  }
+
+/* Card2 ends */
