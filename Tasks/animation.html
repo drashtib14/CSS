@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: #000;
+            overflow: hidden;
+        }
+
+        @keyframes lalala
+        {
+            100%{transform: rotate(0deg);}
+            0%{transform: rotate(-45deg);}
+        }
+
+        @keyframes lalala1
+        {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(45deg);}
+        }
+       
+         .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 200px;
+            left: -200px;
+            /* margin-top: 50px; */
+            /* margin-left: -80px; */
+            /* transform: translate(-450px,0px); */
+            animation: lalala 3s linear infinite alternate-reverse;
+        }
+
+        .container1{
+            position: absolute;
+            top: 250px;
+            left: 600px;
+
+            animation: lalala1 3s linear infinite alternate-reverse;
+
+        }
+        
+        .main{
+            height: 100px;
+            width:250px;
+            background: rgba(255, 255, 255, 0.23);
+            /* border-radius: 30px; */
+            border-radius: 30px;
+            padding: 70px;
+            /* position: relative; */
+            border-left: 2px solid #949494;
+            border-top: 2px solid #949494;
+            border-right: 2px solid purple;
+            border-bottom: 2px solid purple;
+            /* opacity: 0.2; */
+            backdrop-filter: blur(10px);
+            font-family: sans-serif;
+            word-spacing: 4px;
+            letter-spacing: 5px;
+            /* margin-top: 200px; */
+            /* margin-left: -100px; */
+        }
+
+        .card{
+            color: #fff;
+            text-transform: uppercase;
+            /* display: inline; */
+        }
+
+        h4{
+            top: 10px;
+            left: 40px;
+            position: absolute;
+        }
+
+        .btm1, .btm2{
+            top: 160px;
+            left: 50px;
+            display: inline-block;
+            position: absolute;
+            font-size: small;
+        }
+
+        .btm2{
+            top: 200px;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="main">
+            <div class="card">
+                <h4>membership</h4>
+                <p class="btm1">james appleseed</p>
+                <p class="btm2">uxmisfit tools</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="container1">
+            <div class="main">
+                <div class="card">
+                    <h4>membership</h4>
+                    <p class="btm1">james appleseed</p>
+                    <p class="btm2">uxmisfit tools</p>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
