@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animate{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+
+            .container{
+            height: 100px;
+            width: 100px;
+            /* background: gray; */
+            margin: 100px auto;
+            padding: 0px 60px;
+            position: relative;
+            overflow: hidden;
+            /* border: 3px solid black; */
+        }
+
+        .container::before{
+            content: "";
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            padding: inherit;
+            background: conic-gradient(from 20deg,red 0deg,red 90deg, white 90deg,white 180deg, red 180deg,red 270deg, white 270deg,white 360deg);
+
+            animation: animate 2s linear infinite;
+        }
+
+        .container::after{
+            content: "𝓓rashti";
+            position: absolute;
+            height: 90px;
+            width: 210px;
+            top: 6%;
+            left: 2%;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 32px;
+            font-weight: bolder;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container"></div>
+
+</body>
+</html>

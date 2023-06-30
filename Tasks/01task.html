@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container{
+            height: 100px;
+            width: 100px;
+            /* background: gray; */
+            margin: 125px auto;
+            padding: 0px 60px;
+            position: relative;
+        }
+
+        .container::before{
+            content: "";
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: inherit;
+            background: conic-gradient(red 0deg,red 90deg,transparent 90deg,transparent 180deg,red 180deg,red 270deg,transparent 270deg,transparent 360deg);
+        }
+
+        .container::after{
+            content: "𝓓rashti";
+            position: absolute;
+            height: 80px;
+            width: 200px;
+            top: 10%;
+            left: 5%;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 32px;
+            font-weight: bolder;
+            letter-spacing: 3px;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .foot{
+            position: relative;
+            /* color: red; */
+        }
+
+        .fa-home{
+            position: absolute;
+            top: 6%;
+            left: 48%;
+            color: red;
+        }
+
+        .about,.service,.portfolio{
+            position: relative;
+        }
+
+        .fa-user{
+            position: absolute;
+            top: 35%;
+            left: 48%;
+        }
+
+        .fa-bars{
+            position: absolute;
+            top: 60%;
+            left: 48%;
+        }
+
+        .fa-briefcase{
+            position: absolute;
+            top: 88%;
+            left: 48%;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"></div>
+
+    <div class="foot">
+        <ul>
+        <li>
+            <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i>About</a>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i>Services</a>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Portfolio</a>
+        </li>
+        </ul>
+    </div>
+   
+</body>
+</html>
