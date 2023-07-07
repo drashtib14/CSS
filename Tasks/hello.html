@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            line-height: 100vh;
+            overflow: hidden;
+            font-size: 60px;
+            position: relative;
+        }
+
+        body::first-letter{
+            color: rgb(81, 0, 161);
+        }
+
+        .x{
+            height: 100px;
+            width: 400px;
+            border-left: 2px solid;
+            background-color: white;
+            position: absolute;
+            top: 42vh;
+            left:500px;
+            /* margin: auto; */
+            transition: 5s;
+        }
+
+        body:hover .x{
+            left: 63%;
+            border-left: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    Hello World..
+    <div class="x"></div>
+    
+</body>
+</html>

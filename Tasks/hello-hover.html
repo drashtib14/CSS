@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .btn
+        {
+            padding: 15px 30px;
+            position: relative;
+        }
+
+        .btn button
+        {
+            background: purple;
+            padding: 15px 20px;
+            color: #fff;
+            border: none;
+            font-size: 20px;
+        }
+
+        .hover
+        {
+            color: #000;
+            background: beige;
+            border: 3px solid gray;
+            left: 100px;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        button:hover .hover
+        {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="btn">
+        <button>
+        <i class="fa solid fa-home"></i>
+        <div class="hover">Hello!</div>
+        </button>
+    </div>
+
+</body>
+</html>

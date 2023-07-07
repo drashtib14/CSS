@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: conic-gradient(lightblue,lightcoral);
+            background-attachment: fixed;
+        }
+
+        .x{
+            height: 60px;
+            width: 130px;
+            background-color: aqua;
+            border-radius: 60px;
+            text-align: center;
+            line-height: 60px;
+            margin: 340px auto;
+            font-size: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .y{
+            height: inherit;
+            width: inherit;
+            box-shadow: 10px 10px 20px white;
+            transform: rotate(-70deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            animation: shine 1.40s linear infinite;
+        }
+
+        @keyframes shine{
+            0%{
+                top: -80px;
+                left: -80px;
+            }
+
+            100%{
+                top: 100px;
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="x">Start
+        <div class="y"></div>
+    </div>
+    
+</body>
+</html>
