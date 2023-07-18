@@ -8,7 +8,7 @@
     {
         height: 100vh;
         background-size: 100% 100%;
-        background: linear-gradient(45deg,rgba(200, 32, 99, 0.8),rgba(255, 166, 0, 0.728)),url(Images/IceMountain.jpg);
+        background: linear-gradient(45deg,rgba(200, 32, 99, 0.8),rgba(255, 166, 0, 0.728)),url(../Images/IceMountain.jpg);
         display: flex;
         justify-content: center;
         align-items: center;
