@@ -1,0 +1,546 @@
+*
+        *{
+            padding: 0; 
+            margin: 0; 
+            box-sizing: border-box;
+        }
+
+        body{
+            background: linear-gradient(rgba(0, 22, 50, 0.522),rgba(0, 14, 67, 0.65)),
+            url(../Images/house.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 11px;
+            display: inline;
+            border: 1px solid rgb(148, 148, 148);
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .header1{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid rgb(148, 148, 148); */
+            border-left: none;
+            border-right: none;
+            font-size: 14px;
+        }
+
+        .header{
+            display: grid;
+            grid-template-columns: fr fr;
+            grid-template-rows: 38px;
+            /* grid-template-rows: 1fr; */
+            border: 1px solid rgb(148, 148, 148);
+            border-left: none;
+            border-right: none;
+        }
+
+        .head-left, .head-right{
+            padding: 0px 55px;
+            line-height: 39px;
+            color: #fff;
+        }
+
+        .head-right a{
+            color: #fff;
+        }
+        
+        .fa-heart, .fa-envelope-o, .fa-whatsapp{
+        padding-right: 7px;
+        color: #fff;
+       }
+
+       .fa-envelope-o{
+        color: #fff;
+       }
+
+       .fa-facebook, .fa-twitter, .fa-linkedin, .fa-pinterest-p, .fa-youtube-play, .fa-vimeo, .fa-instagram, .fa-foursquare{
+        transition: 1s;
+        color: #fff;
+       }
+
+       .fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover,  .fa-pinterest-p:hover, .fa-youtube-play:hover, .fa-vimeo:hover, .fa-instagram:hover, .fa-foursquare:hover{
+        color: blue;
+       }
+       
+       /* .head-left ul li{
+        transition: 1s;
+       }
+
+       .head-left ul li:hover{
+        color-scheme: blue;
+       } */
+
+       /* .sec2{
+        display: grid;
+        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-rows: 300px;
+       } */
+
+       .sec2{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px 55px;
+       }
+
+    .sec2-right{
+        /* margin: 0px 2px; */
+        font-weight: bolder;
+    }
+
+    #phone{
+        font-size: 17px;
+        }    
+
+    .fa-phone{
+          margin-right: 6px;  
+    }
+
+    .sec2-right a{
+        color: #fff;
+    }
+
+    .sec2-right button{
+        /* color: #fff; */
+        background-color: #0073e1;
+        padding: 10px 13px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        margin-left: 9px;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .sec2-right button::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        /* height: 50px; */
+        /* width: 50px; */
+        background-color: #000;
+        top: 0;
+        left: -100px;
+        z-index: -1;
+    }
+
+    .sec2-right button:hover::before{
+        left: 0px;
+        transition: .35s;
+    }
+
+    .fa-user-circle{
+        margin-left: 11px;
+    }
+
+    .fa-user-circle:hover{
+        opacity: .7;
+    }
+
+    .manubar{
+        display: flex;
+    }
+
+    .manu-home, .manu-demo, .manu-lists, .manu-property, .manu-pages, .manu-elements, .manu-search{
+        /* display: inline; */
+        line-height: 44px;
+        font-weight: bolder;
+        border: none;
+        font-size: 14px;
+        position: relative;
+        padding: 9px 16px;
+    }
+
+    .manu-home a, .manu-demo a, .manu-lists a, .manu-property a, .manu-pages a, .manu-elements a, .manu-search a{
+        color: #fff;
+    }
+
+    .manu-home:hover, .manu-demo:hover, .manu-lists:hover, .manu-property:hover, .manu-pages:hover, .manu-elements:hover, .manu-search:hover{
+        background-color: #0073e1;
+        border-radius: 4px;
+    }
+
+    .submanu-home{
+        background-color: #fff;
+        margin-top: 59px;
+        position: absolute;
+        top: 60px;
+        left: 355px;
+        height: 62%;
+        width: 270px;
+        border-radius: 9px;
+        padding: 25px;
+        font-weight: 600;
+    }
+
+    .submanu-demo{
+        background-color: #fff;
+        margin-top: 59px;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        height: 72%;
+        width: 100%;
+        padding: 25px;
+        font-weight: 600;
+    }
+
+    .submanu-lists{
+        background-color: #fff;
+        margin-top: 59px;
+        position: absolute;
+        top: 65px;
+        left: 37%;
+        height: 80%;
+        width: 340px;
+        padding: 30px;
+        font-weight: 600;
+        border-radius: 9px;
+    }
+
+    .submanu-property{
+        background-color: #fff;
+        margin-top: 59px;
+        position: absolute;
+        top: 70px;
+        left: 0%;
+        height: 70%;
+        width: 100%;
+        padding: 25px;
+        font-weight: 600;
+    }
+
+    .submanu-pages{
+        background-color: #fff;
+        margin-top: 59px;
+        position: absolute;
+        top: 70px;
+        left: 0%;
+        height: 35%;
+        width: 100%;
+        padding: 25px;
+        font-weight: 600;
+    }
+
+    .submanu-elements{
+        background-color: #fff;
+        margin-top: 59px;
+        position: absolute;
+        top: 60px;
+        left: 55%;
+        height: 72%;
+        width: 270px;
+        border-radius: 9px;
+        padding: 25px;
+        font-weight: 600;
+    }
+
+    .submanu-search{
+        background-color: #fff;
+        margin-top: 59px;
+        position: absolute;
+        top: 70px;
+        left: 0%;
+        height: 45%;
+        width: 100%;
+        padding: 25px;
+        font-weight: 600;
+    }
+    
+    .demo-1{
+        position: absolute;
+        top: 25px;
+        left: 162px;
+    }
+
+    .demo-2{
+        position: absolute;
+        top: 25px;
+        left: 445px;
+    }
+
+    .demo-3{
+        position: absolute;
+        top: 25px;
+        left: 694px;
+    }
+
+    .demo-4{
+        position: absolute;
+        top: 25px;
+        left: 1016px;
+    }
+
+    .property-1{
+        position: absolute;
+        top: 25px;
+        left: 150px;   
+    }
+
+    .property-2{
+        position: absolute;
+        top: 25px;
+        left: 430px;   
+    }
+
+    .property-3{
+        position: absolute;
+        top: 25px;
+        left: 710px;   
+    }
+
+    .property-4{
+        position: absolute;
+        top: 25px;
+        left: 1000px;   
+    }
+
+    .pages-1{
+        position: absolute;
+        top: 25px;
+        left: 150px; 
+    }
+
+    .pages-2{
+        position: absolute;
+        top: 25px;
+        left: 430px;   
+    }
+
+    .pages-3{
+        position: absolute;
+        top: 25px;
+        left: 710px;   
+    }
+
+    .pages-4{
+        position: absolute;
+        top: 25px;
+        left: 1000px;   
+    }
+
+    .search-1{
+        position: absolute;
+        top: 25px;
+        left: 150px; 
+    }
+
+    .search-2{
+        position: absolute;
+        top: 25px;
+        left: 500px; 
+    }
+
+    .search-3{
+        position: absolute;
+        top: 25px;
+        left: 850px; 
+    }
+
+    .outer-li ul li{
+        border: 2px solid blue;
+        /* border: none; */
+        display: block;
+        border: none;
+    }
+
+    .submanu-home a, .submanu-demo a, .submanu-lists a, .submanu-inner-li-lists a, .submanu-lists a, .submanu-property a, .submanu-pages a, .submanu-elements a, .submanu-search a{
+        color: #222;
+        font-size: 14px;
+    }
+
+    .submanu-inner-li-lists-1{
+        position: absolute;
+        background-color: #fff;
+        top: 6%;
+        left: 100%;
+        height: 30%;
+        width: 88%;
+        border-radius: 9px;
+        padding: 25px;
+    }
+
+    .submanu-inner-li-lists-2{
+        position: absolute;
+        background-color: #fff;
+        top: 9%;
+        left: 100%;
+        height: 40%;
+        width: 88%;
+        border-radius: 9px;
+        padding: 25px;
+    }
+
+    .submanu-inner-li{
+        position: absolute;
+        background-color: #fff;
+        top: 45%;
+        left: 100%;
+        height: 47%;
+        width: 105%;
+        border-radius: 9px;
+        padding: 25px;
+    }
+
+    .submanu-inner-li-elements{
+        position: absolute;
+        background-color: #fff;
+        top: 45%;
+        left: 100%;
+        height: 47%;
+        width: 105%;
+        border-radius: 9px;
+        padding: 25px;
+    }
+
+    .inner-li{       
+        /* border: 2px solid blue; */
+        display: block;
+    }
+
+    .inner-li a{
+        color: #000;
+        font-size: 14px;
+    }
+
+    .submanu-inner-li, .submanu-inner-li-lists-1, .submanu-inner-li-lists-2, .submanu-inner-li-elements{
+        visibility: hidden;
+    }
+
+    .outer-hover:hover .submanu-inner-li{
+        visibility: visible;
+        transition: .55s; 
+    }
+
+    .outer-hover:hover .submanu-inner-li-lists-1{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-hover:hover .submanu-inner-li-lists-2{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-hover:hover .submanu-inner-li-elements{
+        visibility: visible;
+        transition: .55s;
+    } 
+
+    .i-1{
+        margin-left: 50px;
+    }
+
+    .i-2{
+        margin-left: 102px;
+    }
+
+    .i-3{
+        margin-left: 17px;
+    }
+
+    .i-4{
+        margin-left: 76px;
+    }
+
+    .i-5{
+        margin-left: 73px;
+    }
+
+    .i-6{
+        margin-left: 80px;
+    }
+
+    .i-7{
+        margin-left: 143px;
+    }
+
+    .i-8{
+        margin-left: 78px;
+    }
+
+    .i-9{
+        margin-left: 154px;
+    }
+
+    .submanu-home, .submanu-demo, .submanu-lists, .submanu-property, .submanu-pages, .submanu-elements, .submanu-search{
+        visibility: hidden;
+    }
+
+    .outer-li:hover .submanu-home{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-li:hover .submanu-demo{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-li:hover .submanu-lists{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-li:hover .submanu-property{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-li:hover .submanu-pages{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-li:hover .submanu-elements{
+        visibility: visible;
+        transition: .55s;
+    }
+
+    .outer-li:hover .submanu-search{
+        visibility: visible;
+        transition: .55s;
+    }
+
+.section-3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-3{
+    color: #fff;
+    text-align: center;
+}
+
+.sec-3 h1{
+    font-family: roboto,Sans-serif;
+    font-size: 46px;
+    margin-top: 140px;
+}
+
+.sec-3 p{
+    margin-top: 40px;
+    line-height: 25px;
+}
+
+.outer-li ul li a:hover{
+    background-color: #0073e1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.outer-li{
+    padding-bottom: 20px;
+}
